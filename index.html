@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title> Cộng đồng giải trí việt nam </title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript" src="js/snow.js"></script>
+</head>
+<body>
+	<!-- Phần header --> 
+	<div id=" header">
+		<div id="menu">
+			<ul>
+				<li> 
+					<a href="" target="_self"> Trang chủ </a>
+				</li>
+
+				<li> <a href="#" target="_self"> Tin tức </a>	
+					<ul class="sub_menu">
+						<a href="https://news.zing.vn/" target="_blank">  Zingnew  </a>
+						<a href="http://vneconomy.vn/" target="_blank">  vneconomy  </a>
+						<a href="http://soha.vn/" target="_blank"> soha </a>
+					</ul>
+				</li>
+
+				<li> <a href="#" target="_self"> Diễn đàn </a>	
+					<ul class="sub_menu">
+						<a href="https://whitehat.vn/" target="_blank"> Hacking </a>
+						<a href="https://tinhte.vn/" target="_blank"> Tinh tế </a>
+						<a href="http://vforum.vn/" target="_blank"> Vforum </a>
+					</ul>
+				</li>
+
+				<li> <a href="#" target="_self"> Âm Nhạc </a>
+					<ul class="sub_menu">
+						<a href="https://mp3.zing.vn/" target="_blank"> ZingMp3</a>
+						<a href="https://www.nhaccuatui.com/" target="_blank"> Nhaccuatui</a>
+						<a href="http://nhac.vui.vn/" target="_blank"> Nhac vui </a>
+
+					</ul>
+				</li>
+				<li> <a href="#" target="_self"> Phim </a>	
+					<ul class="sub_menu">
+						<a href="http://www.phimmoi.net/" target="_blank"> Phim Mới</a>
+					 	<a href="http://hdonline.vn/" target="_blank"> hdonline</a> 
+					 	<a href="http://bilutv.com/" target="_blank"> bilutv </a>
+					</ul>
+
+				</li>
+
+			</ul>
+		</div>
+	</div>
+	<!-- Phần nội dung -->
+	<div id="content">
+
+	</div>
+	
+	<div id="footer" >
+		<marquee width="100%" height="100%"  bgcolor="#0099BF" > Chào mừng bạn đến cộng đồng giải trí việt nam : Copyright © 2018 by Nguyen Van Tien 
+			
+		</marquee>
+		
+	</div>
+
+	<div id='closeit' style='border: 0 !important;'>
+<script type='text/javascript'>
+var textSpeed = 2;
+var contentWidth;
+var contentHeight;
+var xMax;
+var yMax;
+var xPos = 0;
+var yPos = 0;
+var xDir = 'right';
+var yDir = 'down';
+function initializeText()
+{
+if (typeof window.innerWidth != 'undefined')
+{
+xMax = window.innerWidth;
+yMax = window.innerHeight;
+}
+else
+if (typeof document.documentElement != 'undefined' && typeof document.documentElement.clientWidth != 'undefined' && document.documentElement.clientWidth != 0)
+{
+xMax = document.documentElement.clientWidth;
+yMax = document.documentElement.clientHeight;
+}
+else
+{
+xMax = document.getElementsByTagName('body')[0].clientWidth;
+yMax = document.getElementsByTagName('body')[0].clientHeight;
+}
+var supertext = document.getElementById('supertext');
+contentWidth = supertext.offsetWidth;
+contentHeight = supertext.offsetHeight;
+setTimeout('moveText()', 400);
+}
+function moveText()
+{
+var supertext = document.getElementById('supertext');
+calculatePosition();
+supertext.style.left = xPos + document.body.scrollLeft + "px";
+supertext.style.top = yPos + document.body.scrollTop + "px";
+animatetext = setTimeout('moveText()', 20);
+}
+function calculatePosition()
+{
+if (xDir == "right")
+{
+if (xPos > (xMax - contentWidth - textSpeed))
+{
+xDir = "left";
+}
+}
+else
+if (xDir == "left")
+{
+if (xPos < (0 + textSpeed))
+{
+xDir = "right";
+}
+}
+if (yDir == "down")
+{
+if (yPos > (yMax - contentHeight - textSpeed))
+{
+yDir = "up";
+}
+}
+else
+if (yDir == "up")
+{
+if (yPos < (0 + textSpeed))
+{
+yDir = "down";
+}
+}
+if (xDir == "right")
+{
+xPos = xPos + textSpeed;
+}
+else
+if (xDir == "left")
+{
+xPos = xPos - textSpeed;
+}
+else
+{
+xPos = xPos;
+}
+if (yDir == "down")
+{
+yPos = yPos + textSpeed;
+}
+else
+if (yDir == "up")
+{
+yPos = yPos - textSpeed;
+}
+else
+{
+yPos = yPos;
+}
+}
+setTimeout('initializeText()', 700);
+function closebandera(){
+div = document.getElementById('closeit');
+div.style.display='none';
+}
+setTimeout(closebandera, 13000);
+</script>
+<span id='supertext' style='position:absolute;left:0;top:0;color:#FF0;text-align:center;z-index:9999999999999'><b>MERRY CHRISTMAS!!!</b><BR></BR><img src='noel/Ong-gia-Noel.gif'/></span>
+</div>
+<object data="http://hocwebgiare.com/noel/Jingle_Bells.mp3" width="0" height="0"> 
+  <param name="filename" value="http://hocwebgiare.com/noel/Jingle_Bells.mp3"> 
+  <param name="autostart" value="1"> 
+  <param name="playcount" value="false"> 
+</object>
+</body>
+</html>

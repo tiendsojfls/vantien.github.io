@@ -1,0 +1,93 @@
+*{
+	margin: 0 ;
+	padding: 0 ;
+	border: none ;
+}
+
+body
+{
+	margin: 0 auto ;
+	font-family : 'Helvetica' , 'Arial' ,sans-serif ;
+	
+}
+
+#header{
+	max-height: 20px ;
+	max-width: 960px ;
+	background: green  ;
+	color: #555 ;
+	padding: 1em ;
+	position: fixed; 
+}
+
+#content{
+	max-height: 1000px ; 
+	height: 550px ;
+    background: #F1F1F1; /* light gray */ 
+    border-bottom: 1px solid #D4D4D4; /* dark gray "underline" */ 
+    background-image: url("http://thuthuatphanmem.vn/uploads/2018/04/24/hinh-nen-3d-nhung-chu-buom-xinh-dep_090319741.jpg");
+    background-color: #cccccc;
+}
+
+}
+
+
+#footer{
+	background-color: lightblue; 
+	/*position: bottom ; */
+	padding: 1em ;
+	max-height: 5px ;
+	height: 3px;
+	
+
+}
+
+#menu ul {
+		background: #1F568B;
+		list-style-type: none;
+		text-align: center;
+}
+
+#menu li {
+		color: #F1F1F1 ;
+		display: inline-block; 
+		width: 120px ;
+		height: 40px ;
+		line-height: 40px ;
+		margin-left: -5px;
+
+}
+
+#menu a {
+		text-decoration: none ;
+		color: #fff ;
+		display: block;
+}
+
+#menu a:hover {
+			background: #F1F1F1 ;
+			color: #333 ;
+}
+
+/*dropDown menu */ 
+
+.sub_menu li{
+	display: none;
+}
+
+#menu li{
+	position: relative; 
+}
+
+.sub_menu {
+	display: none;
+	position: absolute; 
+}
+
+#menu li:hover .sub_menu{
+	display: block;
+}
+
+.sub_menu li{
+	margin-left: 0 !important ;
+}
